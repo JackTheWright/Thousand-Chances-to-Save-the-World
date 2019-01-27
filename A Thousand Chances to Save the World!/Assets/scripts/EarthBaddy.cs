@@ -8,6 +8,7 @@ public class EarthBaddy : MonoBehaviour
     public Rigidbody2D myRigidBody;
     public Transform target;
     public float range;
+    public int hpEarth = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +52,10 @@ public class EarthBaddy : MonoBehaviour
         {
             myRigidBody.velocity = new Vector2(-moveSpeed, 0f);
         }
+
+        if (hpEarth == 0) {
+            Destroy(gameObject);
+        }
     }
 
     bool IsFacingRight()
@@ -61,6 +66,12 @@ public class EarthBaddy : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         transform.localScale = new Vector2(-(Mathf.Sign(myRigidBody.velocity.x)), 1f);
+    }
+
+    public void Damage(int damage)
+    {
+        hpEarth -= damage;
+        print("damaged mushboy");
     }
 
 

@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - MushBaddy
+  - EarthBaddy
+  - hitbox
   layers:
   - Default
   - TransparentFX
@@ -20,9 +23,9 @@ TagManager:
   - TMid
   - Enemy
   - ForegroundD
-  - LevelEnder
-  - 
-  - 
+  - Level Ender
+  - Interactive Enviro
+  - attack
   - 
   - 
   - 
@@ -49,6 +52,9 @@ TagManager:
     locked: 0
   - name: Level Ender
     uniqueID: 3315459071
+    locked: 0
+  - name: Interactive Enviro
+    uniqueID: 1675084253
     locked: 0
   - name: Player
     uniqueID: 1799267357

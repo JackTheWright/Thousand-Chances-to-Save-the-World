@@ -6,6 +6,7 @@ public class MushBaddyMove : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
     Rigidbody2D myRigidBody;
+    public int hpMush = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -36,5 +37,10 @@ public class MushBaddyMove : MonoBehaviour
         transform.localScale = new Vector2(-(Mathf.Sign(myRigidBody.velocity.x)), 1f);
     }
 
+    public void Damage(int damage) {
+        hpMush -= damage;
+        print("damaged mushboy");
+        Destroy(gameObject);
+    }
 
 }
