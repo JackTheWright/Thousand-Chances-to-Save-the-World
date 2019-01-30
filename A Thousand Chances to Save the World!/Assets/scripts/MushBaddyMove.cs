@@ -7,6 +7,7 @@ public class MushBaddyMove : MonoBehaviour
     [SerializeField] float moveSpeed = 1f;
     Rigidbody2D myRigidBody;
     public int hpMush = 1;
+    public int mushDmg = 1;
 
     // Start is called before the first frame update
     void Start()

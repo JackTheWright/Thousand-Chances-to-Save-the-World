@@ -61,8 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Attack.cs" />
-    <Compile Include="Assets\Hitbox.cs" />
     <Compile Include="Assets\PixelMobs\Script\Ease.cs" />
     <Compile Include="Assets\PixelMobs\Script\Intro.cs" />
     <Compile Include="Assets\PixelMobs\Script\Mob.cs" />
@@ -76,9 +74,17 @@
     <Compile Include="Assets\Random extras\2d-extras-master\Assets\Tilemap\Tiles\Random Tile\Scripts\RandomTile.cs" />
     <Compile Include="Assets\Random extras\2d-extras-master\Assets\Tilemap\Tiles\Rule Tile\Scripts\RuleTile.cs" />
     <Compile Include="Assets\Random extras\2d-extras-master\Assets\Tilemap\Tiles\Terrain Tile\Scripts\TerrainTile.cs" />
+    <Compile Include="Assets\scripts\Attack.cs" />
     <Compile Include="Assets\scripts\EarthBaddy.cs" />
+    <Compile Include="Assets\scripts\Hitbox.cs" />
+    <Compile Include="Assets\scripts\menuButton.cs" />
     <Compile Include="Assets\scripts\MushBaddyMove.cs" />
+    <Compile Include="Assets\scripts\PauseScreen.cs" />
     <Compile Include="Assets\scripts\Player.cs" />
+    <Compile Include="Assets\scripts\PlayerDamage.cs" />
+    <Compile Include="Assets\scripts\QuitButton.cs" />
+    <Compile Include="Assets\scripts\resumeButton.cs" />
+    <Compile Include="Assets\scripts\StartButton.cs" />
     <Compile Include="Assets\scripts\WallCollider.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

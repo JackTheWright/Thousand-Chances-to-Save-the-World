@@ -9,6 +9,7 @@ public class EarthBaddy : MonoBehaviour
     public Transform target;
     public float range;
     public int hpEarth = 2;
+    public int earthDmg = 1;
 
     // Start is called before the first frame update
     void Start()
